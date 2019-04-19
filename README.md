@@ -28,5 +28,3 @@ Let's take a look at some examples:
 The default settings will create a 5 row, 6 column grid and give 120 seconds to you for answering the questions.  If that's too difficult or easy for you, you can always change the settings of the program.  To change them, simply open the file with a text editor and change them as you wish.  You can also change the program behaviour yourself, but it is not advised as it can mess things up.
 
 <img src="https://files.catbox.moe/00luv1.png">
-
-Changing these should be fairly self-explanatory, not that most of them need to be touched anyway.
