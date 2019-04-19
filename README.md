@@ -29,4 +29,4 @@ The default settings will create a 5 row, 6 column grid and give 120 seconds to 
 
 <img src="https://files.catbox.moe/00luv1.png">
 
-These should be fairly self-explanatory.
+Changing these should be fairly self-explanatory, not that most of them need to be touched anyway.
