@@ -12,8 +12,8 @@ FINAL_DIMENSIONS = '800x420'  # Screen Size at end of game
 
 MIN_DIFF = 0.0001  # Min Percision (You probably shouldn't change this...)
 
-GREEN = '#aaffaa'  # Green Background
-RED = '#ffaaaa'  # Red Background
+GREEN = '#aaffaa'  # Green
+RED = '#ffaaaa'  # Red
 
 TITLE_FONT = ('Courier', 30)  # Title Font
 FONT = ('Arial', 15)  # Regular Font (for labels)
@@ -231,15 +231,15 @@ timerThread = Thread(target=pulse)
 def beginGame():
     global started, timerThread
 
-    for i in range(COLS):
-        label = Label(table, text=STR_FUNCS[randint(0, 1)](angles[i]), font=FONT, **T_LABEL_OPTIONS)
-        label.grid(row=0, column=i + 1, padx=3, pady=3)
-
-    for i in range(ROWS):
-        label = Label(table, text=funcs[i][0], font=FONT, **T_LABEL_OPTIONS)
-        label.grid(row=i + 1, column=0, padx=3, pady=3)
-
     if not started:
+        for i in range(COLS):
+            label = Label(table, text=STR_FUNCS[randint(0, 1)](angles[i]), font=FONT, **T_LABEL_OPTIONS)
+            label.grid(row=0, column=i + 1, padx=3, pady=3)
+
+        for i in range(ROWS):
+            label = Label(table, text=funcs[i][0], font=FONT, **T_LABEL_OPTIONS)
+            label.grid(row=i + 1, column=0, padx=3, pady=3)
+
         timerThread.start()
         started = True
 
