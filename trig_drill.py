@@ -37,21 +37,21 @@ def safe(errorType, default):
 @safe(ArithmeticError, 'undefined')
 def sec(x): 
     ans = 1 / cos(x)
-    if ans > 1e10:
+    if abs(ans) > 1e10:
         return 'undefined'
     return ans
 
 @safe(ArithmeticError, 'undefined')
 def csc(x): 
     ans = 1 / sin(x)
-    if ans > 1e10:
+    if abs(ans) > 1e10:
         return 'undefined'
     return ans
 
 @safe(ArithmeticError, 'undefined')
 def cot(x): 
     ans = 1 / tan(x)
-    if ans > 1e10:
+    if abs(ans) > 1e10:
         return 'undefined'
     return ans
 
