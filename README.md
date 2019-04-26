@@ -4,18 +4,12 @@ A monolithic trig drill program written using python (and tkinter for gui)
 ## Instructions
 
 1. Run the program
-2. Press the start button
-3. Enjoy!
 
 ### Additional Things to Note
 
 #### Numbers
 
-Answers are evaluated as Python expressions, which means that fractions are specified as `x/y` and square root can be specified by `sqrt(x)`.  However, `undefined` will be interpreted as `undefined`.
-
-The exact specifications are: the program first tries to directly call `eval()` on your answer.  If that throws an error, the answer will default to `undefined` as long as you gave an answer.  Note that the `sqrt` function from the `math` library has already been imported in the code, so don't worry about that.
-
-Let's take a look at some examples:
+The format for entering answers is relatively simple:  just take a look at some examples below:
 
 - `sin(30 deg)` = `1/2` (`1 / 2` works too, spacing does not matter)
 - `sin(60 deg)` = `sqrt(3)/2`
